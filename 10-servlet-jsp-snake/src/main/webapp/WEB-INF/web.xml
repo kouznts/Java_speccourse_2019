@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <servlet>
+        <servlet-name>MenuServlet</servlet-name>
+        <servlet-class>MenuServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>GameServlet</servlet-name>
+        <servlet-class>GameServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AboutServlet</servlet-name>
+        <servlet-class>AboutServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>GameoverServlet</servlet-name>
+        <servlet-class>GameoverServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MenuServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>GameServlet</servlet-name>
+        <url-pattern>/game</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AboutServlet</servlet-name>
+        <url-pattern>/about</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>GameoverServlet</servlet-name>
+        <url-pattern>/gameover</url-pattern>
+    </servlet-mapping>
+</web-app>
